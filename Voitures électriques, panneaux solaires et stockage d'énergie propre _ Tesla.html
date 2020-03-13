@@ -1494,7 +1494,8 @@
                 </section>
             </section>
             </div>
-</div><script type="text/javascript" id="">(function(e,r){function l(){var a=document.getElementsByTagName("iframe");if(a)for(var c=0;c<a.length;c++)if(/^https?:\/\/player.vimeo.com/.test(a[c].src)&&!a[c].playerId){var b=/video\/([0-9]*)/.exec(a[c].src)[1];~a[c].src.indexOf("?")?a[c].src+="\x26player_id\x3d"+b:a[c].src+="?player_id\x3d"+b;a[c].playerId=b;g[b]=a[c];console.log("getplayer",b);b="//vimeo.com/api/v2/video/"+b+".json?callback\x3daddPlayerData";var d=document.createElement("script"),e=document.getElementsByTagName("script")[0];
+</div>
+          <script type="text/javascript" id="">(function(e,r){function l(){var a=document.getElementsByTagName("iframe");if(a)for(var c=0;c<a.length;c++)if(/^https?:\/\/player.vimeo.com/.test(a[c].src)&&!a[c].playerId){var b=/video\/([0-9]*)/.exec(a[c].src)[1];~a[c].src.indexOf("?")?a[c].src+="\x26player_id\x3d"+b:a[c].src+="?player_id\x3d"+b;a[c].playerId=b;g[b]=a[c];console.log("getplayer",b);b="//vimeo.com/api/v2/video/"+b+".json?callback\x3daddPlayerData";var d=document.createElement("script"),e=document.getElementsByTagName("script")[0];
 d.async=!0;d.type="text/javascript";d.src=b;e.parentNode.insertBefore(d,e);h(a[c])}5>=m?m+=1:window.clearInterval(n)}function p(){window.clearInterval(n);l()}function q(a){if(!/^https?:\/\/player.vimeo.com/.test(a.origin))return!1;"*"===k&&(k=a.origin);a=JSON.parse(a.data);var c=g[a.player_id]||{},b=c.videoData||{};switch(a.event){case "ready":if(a.player_id)h(c),c.playerLoaded?d(b,"Video Load"):c.sendReady=!0;else for(key in g)h(g[key]);break;case "play":b.progress+1.5>b.duration&&(b.progress=0);
 d(b,"Play");break;case "playProgress":b.seekStart||0===b.seekStart?2<b.playProgressCount?(b.progress=b.seekStart,b.seekStart=void 0,d(b,"Seek Start"),b.progress=a.data.seconds,d(b,"Seek End"),b.playProgressCount=0):b.playProgressCount++:b.progress=a.data.seconds;a=b;if(a.progress&&a.duration&&(b=Math.floor(a.progress/a.duration*100),b>a.nextMilestone))for(c=0;c<e.length;c++)if(e[c]>b){d(a,"Milestone - "+e[c-1]+"%");if(r)for(b=c-2;e[b]>=a.nextMilestone;b--)d(a,"Milestone - "+e[b]+"%");a.nextMilestone=
 e[c];break}break;case "pause":b.progress+1.5>b.duration?(b.progress=b.duration,d(b,"Finish")):d(b,"Pause");break;case "seek":b.seekStart=b.progress,b.progress=a.data.seconds,b.playProgressCount=0}}function f(a,c,b){c={method:c};b&&(c.value=b);b=JSON.stringify(c);a.contentWindow.postMessage(b,k)}function h(a){f(a,"addEventListener","loadProgress");f(a,"addEventListener","play");f(a,"addEventListener","playProgress");f(a,"addEventListener","pause");f(a,"addEventListener","seek");f(a,"addEventListener",
@@ -1503,4 +1504,52 @@ var c=g[a[0].id],b=/color=([a-zA-Z0-9]*)/.exec(c.src);c.videoData=a[0];c.videoDa
 p));e.push(100)})([10,20,30,40,50,60,70,80,90],!0);</script>
 <script type="text/javascript" id="">window._svq=window._svq||[];window._svq.push(["_setAccount","2790_03955"]);window._svq.push(["_trackPageView"]);(function(b,c){var a=b.createElement(c);a.type="text/javascript";a.src="//track.securedvisit.com/js/sv.js";var d=b.getElementsByTagName(c)[0];d.parentNode.insertBefore(a,d)})(document,"script");</script>
 
-<script type="text/javascript" id="">!function(){if("www.tesla.com"===document.location.hostname)for(var b=document.querySelectorAll("a"),a=0;a<b.length;a++)b[a].href.includes("//shop.tesla.com")&&(b[a].href+="?tesref\x3dtrue")}();</script></body></html>
+<script type="text/javascript" id="">!function(){if("www.tesla.com"===document.location.hostname)for(var b=document.querySelectorAll("a"),a=0;a<b.length;a++)b[a].href.includes("//shop.tesla.com")&&(b[a].href+="?tesref\x3dtrue")}();</script>
+
+  <script>
+
+      const frenchDictionary = {
+          'coucou': 'salut !',
+          'comment tu vas': 'très bien quentin',
+          'Ou vis tu ?': 'Bordeaux',
+      };
+
+      //déclaration des variables
+      let chatBotArea = document.createElement("div");
+      let bouton = document.createElement("button");
+      bouton.innerText = ('Envoyer');
+      let showText = document.createElement("h3");
+      showText.innerText = ('Test');
+      let showMyText = document.createElement("h4");
+      showMyText.innerText = ('mon text');
+      let chatArea = document.createElement("textarea");
+
+      // Englobe nos élémentz dans une div
+      chatBotArea.append(showMyText, showText, chatArea, bouton);
+      document.body.append(chatBotArea);
+
+      // organisation des éléments
+      chatBotArea.appendChild(showText,showMyText);
+      chatBotArea.append(chatArea, bouton);
+
+      //afficher le texte que j'écris
+      bouton.addEventListener('click', function(){
+        /*  if (){
+              selectedDict =
+          }
+*/
+          for(let i=0; i < Object.keys(frenchDictionary).length; i++){
+              if (chatArea.value.includes(Object.keys(frenchDictionary)[i])){
+                  showText.innerText = Object.values(frenchDictionary)[i];
+              }
+          }
+          showMyText.innerText = chatArea.value;
+
+      });
+
+
+
+
+  </script>
+
+  </body></html>
