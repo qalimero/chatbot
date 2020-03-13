@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Voitures électriques, panneaux solaires et stockage d'énergie propre _ Tesla.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="1518" column="39" lean-forward="true" selection-start-line="1518" selection-start-column="39" selection-end-line="1518" selection-end-column="39" />
+            <state relative-caret-position="214">
+              <caret line="1518" column="47" selection-start-line="1518" selection-start-column="47" selection-end-line="1518" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -95,17 +95,19 @@
       <updated>1583925274067</updated>
       <workItem from="1583925275398" duration="2712000" />
       <workItem from="1583940247926" duration="27000" />
-      <workItem from="1583940275474" duration="17012000" />
+      <workItem from="1583940275474" duration="17734000" />
+      <workItem from="1584106113043" duration="115000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19751000" />
+    <option name="totallyTimeSpent" value="20588000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -137,8 +139,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Voitures électriques, panneaux solaires et stockage d'énergie propre _ Tesla.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="1518" column="39" lean-forward="true" selection-start-line="1518" selection-start-column="39" selection-end-line="1518" selection-end-column="39" />
+        <state relative-caret-position="214">
+          <caret line="1518" column="47" selection-start-line="1518" selection-start-column="47" selection-end-line="1518" selection-end-column="47" />
         </state>
       </provider>
     </entry>
