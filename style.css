@@ -51,11 +51,11 @@ div.chatBotArea button:hover{
     color: white;
 }
 div.chatBotArea textarea:focus{ 
-    outline: none !important;
+    outline: none;
     box-shadow: 0 0 5px #707070;
 }
 div.chatBotArea button:focus{
-    outline: none !important;
+    outline: none;
 }
 div.chatBotArea h4{
     margin-top: 15px;
