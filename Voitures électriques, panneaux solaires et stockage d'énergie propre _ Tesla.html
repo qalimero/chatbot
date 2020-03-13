@@ -69,7 +69,7 @@
 <link rel="stylesheet" media="all" href="./Voitures électriques, panneaux solaires et stockage d&#39;énergie propre _ Tesla_files/css_7Iu70aMTT6tOWb0B3aY7EL0rq8QpUlXWeMnTn2V7qIw.css">
 <link rel="stylesheet" media="all" href="./Voitures électriques, panneaux solaires et stockage d&#39;énergie propre _ Tesla_files/css_iueeTziPL0itJv1SQY7pEhzKEhfmsDk3F9EKQ53RYyE.css">
 
-    
+<link rel="stylesheet" href="./style.css">
 <!--[if lte IE 8]>
 <script src="/_flysystem/s3/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
 <![endif]-->
@@ -1506,50 +1506,52 @@ p));e.push(100)})([10,20,30,40,50,60,70,80,90],!0);</script>
 
 <script type="text/javascript" id="">!function(){if("www.tesla.com"===document.location.hostname)for(var b=document.querySelectorAll("a"),a=0;a<b.length;a++)b[a].href.includes("//shop.tesla.com")&&(b[a].href+="?tesref\x3dtrue")}();</script>
 
-  <script>
+<script>
 
-      const frenchDictionary = {
-          'coucou': 'salut !',
-          'comment tu vas': 'très bien quentin',
-          'Ou vis tu ?': 'Bordeaux',
-      };
+  const frenchDictionary = {
+      'coucou': 'salut !',
+      'comment tu vas': 'très bien quentin',
+      'Ou vis tu ?': 'Bordeaux',
+  };
 
-      //déclaration des variables
-      let chatBotArea = document.createElement("div");
-      let bouton = document.createElement("button");
-      bouton.innerText = ('Envoyer');
-      let showText = document.createElement("h3");
-      showText.innerText = ('Test');
-      let showMyText = document.createElement("h4");
-      showMyText.innerText = ('mon text');
-      let chatArea = document.createElement("textarea");
+  //déclaration des variables
+  let closeButton = document.createElement("div");
+  let chatBotArea = document.createElement("div");
+  chatBotArea.classList.add("chatBotArea");
+  let bouton = document.createElement("button");
+  bouton.innerText = ('Envoyer');
+  let showText = document.createElement("h3");
+  showText.innerText = ('Test');
+  let showMyText = document.createElement("h4");
+  showMyText.innerText = ('mon text');
+  let chatArea = document.createElement("textarea");
 
-      // Englobe nos élémentz dans une div
-      chatBotArea.append(showMyText, showText, chatArea, bouton);
-      document.body.append(chatBotArea);
+  // Englobe nos élémentz dans une div
+  chatBotArea.append(showMyText, showText, chatArea, bouton);
+  document.body.append(chatBotArea);
 
-      // organisation des éléments
-      chatBotArea.appendChild(showText,showMyText);
-      chatBotArea.append(chatArea, bouton);
+  // organisation des éléments
+  chatBotArea.appendChild(showText,showMyText);
+  chatBotArea.append(chatArea, bouton);
 
-      //afficher le texte que j'écris
-      bouton.addEventListener('click', function(){
-        /*  if (){
-              selectedDict =
-          }
+  //afficher le texte que j'écris
+  bouton.addEventListener('click', function(){
+    /*  if (){
+          selectedDict =
+      }
 */
-          for(let i=0; i < Object.keys(frenchDictionary).length; i++){
-              if (chatArea.value.includes(Object.keys(frenchDictionary)[i])){
-                  showText.innerText = Object.values(frenchDictionary)[i];
-              }
+      for(let i=0; i < Object.keys(frenchDictionary).length; i++){
+          if (chatArea.value.includes(Object.keys(frenchDictionary)[i])){
+              showText.innerText = Object.values(frenchDictionary)[i];
           }
-          showMyText.innerText = chatArea.value;
+      }
+      showMyText.innerText = chatArea.value;
 
-      });
+  });
 
 
 
 
-  </script>
+</script>
 
   </body></html>

@@ -1,0 +1,80 @@
+
+div.chatBotArea{
+    background-color: #fff;
+    position: fixed;
+    max-width: 350px;
+    width: 100%;
+    top: 20%;
+    bottom: 70px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-box-shadow: -14px 14px 40px -19px rgba(128, 128, 128, 0.75);
+    -moz-box-shadow: -14px 14px 40px -19px rgba(128, 128, 128, 0.75);
+    box-shadow: -14px 14px 40px -19px rgba(128, 128, 128, 0.75);
+    z-index: 9999;
+}
+div.chatBotArea::before{
+    content: "Bienvenue !";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+div.chatBotArea textarea{
+    position: absolute;
+    bottom: 15px;
+    border: 1px solid #707070;
+    resize: none;
+    border-radius: 15px;
+    font-size: 14px;
+    background: #fff;
+    color: #707070;
+    width: 85%;
+    height: 46px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+div.chatBotArea button{
+    position: absolute;
+    bottom: 15px;
+    right: 23.5px;
+    background: #d4d4d4;
+    color: #707070;
+    border-radius: 0px 15px 15px 0px;
+    border: 1px solid #707070;
+    height: 46px;
+    transition: ease-in-out 0.2s;
+}
+div.chatBotArea button:hover{
+    background: #9A0F17;
+    color: white;
+}
+div.chatBotArea textarea:focus{ 
+    outline: none !important;
+    box-shadow: 0 0 5px #707070;
+}
+div.chatBotArea button:focus{
+    outline: none !important;
+}
+div.chatBotArea h4{
+    margin-top: 15px;
+    display: block;
+    width: 50%;
+    background: #9A0F17;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px 15px 15px 0;
+    font-weight: normal;
+    font-size: 14px;
+}
+div.chatBotArea h3{
+    position: absolute;
+    right: 5%;
+    background: #d4d4d4;
+    padding: 5px 15px;
+    border-radius: 15px 15px 0 15px;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: end;
+}
